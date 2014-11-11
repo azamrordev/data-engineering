@@ -6929,3 +6929,281 @@ Processing by DataInputsController#new as HTML
   Rendered data_inputs/_form.html.erb (11.0ms)
   Rendered data_inputs/new.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 307ms (Views: 299.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:11:26 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DataInputsController#new as HTML
+Completed 401 Unauthorized in 85ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-11 14:11:27 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (3.0ms)
+  Rendered c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (432.8ms)
+Completed 200 OK in 2256ms (Views: 2212.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/purchase_details.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/data_inputs.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/data_inputs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/purchase_details.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:29 -0800
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-11 14:11:42 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2J9mCXlAUSXn3tIJGHp8wRw0MLFIpUVtLQXYjMlWDOc=", "user"=>{"email"=>"azam.rordev@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'azam.rordev@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["current_sign_in_at", "2014-11-11 22:11:43.138058"], ["last_sign_in_at", "2014-11-11 21:14:31.130653"], ["sign_in_count", 3], ["updated_at", "2014-11-11 22:11:43.140057"]]
+  [1m[36m (103.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 397ms (ActiveRecord: 104.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+Processing by DataInputsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+DEPRECATION WARNING: String based terminators are deprecated, please use a lambda. (called from <class:DataInput> at c:/azam/rubyonrails/projects/data_engineering/app/models/data_input.rb:2)
+  Rendered data_inputs/_form.html.erb (35.3ms)
+  Rendered data_inputs/new.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 192ms (Views: 178.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/data_inputs.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/purchase_details.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/purchase_details.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/data_inputs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:43 -0800
+
+
+Started POST "/data_inputs" for 127.0.0.1 at 2014-11-11 14:11:46 -0800
+Processing by DataInputsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uB+6q24KTq9MVdR8mDnOTGbgI8vhHWf2+x46kGGMwwg=", "data_input"=>{"name"=>""}, "commit"=>"Create Data input"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered data_inputs/_form.html.erb (7.0ms)
+  Rendered data_inputs/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 162ms (Views: 150.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/purchase_details.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/data_inputs.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/data_inputs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/purchase_details.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:47 -0800
+
+
+Started POST "/data_inputs" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+Processing by DataInputsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uB+6q24KTq9MVdR8mDnOTGbgI8vhHWf2+x46kGGMwwg=", "data_input"=>{"name"=>""}, "commit"=>"Create Data input"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered data_inputs/_form.html.erb (5.0ms)
+  Rendered data_inputs/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 158ms (Views: 146.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/data_inputs.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/purchase_details.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/data_inputs.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/purchase_details.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:11:56 -0800
+
+
+Started POST "/data_inputs" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+Processing by DataInputsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uB+6q24KTq9MVdR8mDnOTGbgI8vhHWf2+x46kGGMwwg=", "data_input"=>{"name"=>"", "tab"=>#<ActionDispatch::Http::UploadedFile:0x0000000400c9c8 @tempfile=#<Tempfile:C:/Users/MDAZAM/AppData/Local/Temp/RackMultipart20141111-2316-zmunq5>, @original_filename="sampleCsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"data_input[tab]\"; filename=\"sampleCsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Create Data input"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered data_inputs/_form.html.erb (4.0ms)
+  Rendered data_inputs/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 164ms (Views: 147.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/purchase_details.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/data_inputs.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/data_inputs.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/purchase_details.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:03 -0800
+
+
+Started POST "/data_inputs" for 127.0.0.1 at 2014-11-11 14:12:15 -0800
+Processing by DataInputsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uB+6q24KTq9MVdR8mDnOTGbgI8vhHWf2+x46kGGMwwg=", "data_input"=>{"name"=>"", "tab"=>#<ActionDispatch::Http::UploadedFile:0x00000004005ce0 @tempfile=#<Tempfile:C:/Users/MDAZAM/AppData/Local/Temp/RackMultipart20141111-2316-1vpacmq>, @original_filename="sampleTab.tab", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"data_input[tab]\"; filename=\"sampleTab.tab\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Create Data input"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `tab_content_type`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "data_inputs" ("created_at", "name", "tab_content_type", "tab_file_name", "tab_file_size", "tab_updated_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-11-11 22:12:15.076736"], ["name", ""], ["tab_content_type", "application/octet-stream"], ["tab_file_name", "sampleTab.tab"], ["tab_file_size", 381], ["tab_updated_at", "2014-11-11 22:12:15.074307"], ["updated_at", "2014-11-11 22:12:15.076736"]]
+  [1m[36m (100.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "purchase_details" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 22:12:15.272536"], ["item_description", "$10 off $20 of food"], ["item_price", 10.0], ["merchant_address", "987 Fake St"], ["merchant_name", "Bob's Pizza\n"], ["purchase_count", 2], ["purchaser_name", "Snake Plissken"], ["updated_at", "2014-11-11 22:12:15.272536"]]
+  [1m[35m (96.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "purchase_details" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-11-11 22:12:15.377927"], ["item_description", "$30 of awesome for $10"], ["item_price", 10.0], ["merchant_address", "456 Unreal Rd"], ["merchant_name", "Tom's Awesome Shop\n"], ["purchase_count", 5], ["purchaser_name", "Amy Pond"], ["updated_at", "2014-11-11 22:12:15.377927"]]
+  [1m[36m (103.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "purchase_details" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-11 22:12:15.489042"], ["item_description", "$20 Sneakers for $5"], ["item_price", 5.0], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium\n"], ["purchase_count", 1], ["purchaser_name", "Marty McFly"], ["updated_at", "2014-11-11 22:12:15.489042"]]
+  [1m[35m (109.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "purchase_details" ("created_at", "item_description", "item_price", "merchant_address", "merchant_name", "purchase_count", "purchaser_name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-11-11 22:12:15.609992"], ["item_description", "$20 Sneakers for $5"], ["item_price", 5.0], ["merchant_address", "123 Fake St"], ["merchant_name", "Sneaker Store Emporium\n"], ["purchase_count", 4], ["purchaser_name", "Snake Plissken"], ["updated_at", "2014-11-11 22:12:15.609992"]]
+  [1m[36m (89.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/purchase_details
+Completed 302 Found in 648ms (ActiveRecord: 513.8ms)
+
+
+Started GET "/purchase_details" for 127.0.0.1 at 2014-11-11 14:12:15 -0800
+Processing by PurchaseDetailsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPurchaseDetail Load (0.0ms)[0m  [1mSELECT "purchase_details".* FROM "purchase_details"[0m
+  Rendered purchase_details/index.html.erb within layouts/application (102.6ms)
+Completed 200 OK in 263ms (Views: 257.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/data_inputs.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/purchase_details.css?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/data_inputs.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
+
+
+Started GET "/assets/purchase_details.js?body=1" for 127.0.0.1 at 2014-11-11 14:12:16 -0800
